@@ -1,0 +1,15 @@
+body{
+    background-color: #de00b9;
+    font-family: Arial, sans-serif;
+}
+h1{color: #09ff00;}
+img{
+    border: 1px solid #000;
+    margin: 10px;
+    width: 105px;
+}
+#lol{
+    border: 1px solid #000;
+    margin: 10px;
+    width: 200px;
+}
