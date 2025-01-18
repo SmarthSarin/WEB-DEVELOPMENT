@@ -69,3 +69,10 @@ TO LINK CSS <link rel="stylesheet" href="style.css">
 '.' refer to Class
 '#' refer to ID
 
+
+<pre> tag is used to write colliding code 
+&lt;  for <
+&gt;  for >
+&amp; for &
+&nbsp; for a non-breaking space
+&copy; for ©
