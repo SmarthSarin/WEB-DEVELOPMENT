@@ -66,19 +66,33 @@
     </style>
 </head>
 <body>
-    <div class="card">
-        <img src="https://img.freepik.com/premium-photo/cool-cat-tshirt-design_841543-6910.jpg?semt=ais_hybrid" alt="Avatar">
+    <div class="card" id="animalCard">
+        <img id="animalImage" src="https://img.freepik.com/premium-photo/cool-cat-tshirt-design_841543-6910.jpg?semt=ais_hybrid" alt="Avatar">
         <div class="container">
-            <button class="button">Cat</button>
-            <button class="button">Dog</button>
+            <button class="button" onclick="showCat()">Cat</button>
+            <button class="button" onclick="showDog()">Dog</button>
         </div>
         <div class="container">
-            <h4><b>John Doe</b></h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos maiores facilis debitis.</p>
+            <h1 id="animalName"></h1>
+            <p id="animalDescription"></p>
         </div>
         <div class="button-container">
             <button class="button2">More</button>
         </div>
     </div>
+
+    <script>
+        function showCat() {
+            document.getElementById('animalImage').src = "https://img.freepik.com/premium-photo/cool-cat-tshirt-design_841543-6910.jpg?semt=ais_hybrid";
+            document.getElementById('animalName').innerHTML = "<b>John Doe</b>";
+            document.getElementById('animalDescription').innerText = "Cats are small, carnivorous mammals that are often kept as pets.";
+        }
+
+        function showDog() {
+            document.getElementById('animalImage').src = "https://img.freepik.com/free-vector/summer-dog-cartoon-vector-illustration_43623-1230.jpg"; 
+            document.getElementById('animalName').innerHTML = "<b>Leo Dawg</b>";
+            document.getElementById('animalDescription').innerText = "Dogs are domesticated mammals, not natural wild animals. They were originally bred from wolves.";
+        }
+    </script>
 </body>
 </html>
