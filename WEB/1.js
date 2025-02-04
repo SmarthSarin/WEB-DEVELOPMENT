@@ -21,14 +21,20 @@ ternary opertaor is a short hand for if else statement
 
 
 loop and functions 
-while 
 
-for 
+* while Loop
 
-do while 
+* for Loop
+
+* do while Loop
+
+* for in Loop
+
+* for of Loop
 
 */
 
 for (var i = 1; i < 10; i++) {
     console.log(i);
 }   
+
