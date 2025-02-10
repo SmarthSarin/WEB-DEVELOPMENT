@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RPS</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: rgb(71, 69, 69);
+            font-family: arial
+        }
+
+        button {
+            background: rgb(130, 133, 136);
+            border: none;
+            color: #ffffff;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: background-color .3s ease
+        }
+
+        button:hover {
+            background: rgb(43, 44, 45)
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="playGame('ROCK')">ROCK</button><button onclick="playGame('SCISSORS')">SCISSORS</button><button
+        onclick="playGame('PAPER')">PAPER</button>
+    <script>
+        function playGame(p) {
+            const c = ['ROCK', 'PAPER', 'SCISSORS'][Math.floor(Math.random() * 3)];
+            alert(`You picked ${p}, computer picked ${c}, so ${p == c ? 'TIE' :
+                (p == 'ROCK' && c == 'SCISSORS' || p == 'SCISSORS' && c == 'PAPER' ||
+                    p == 'PAPER' && c == 'ROCK' ?
+                    'YOU WIN' : 'YOU LOSE')}`)
+        }
+    </script>
+</body>
+
+</html>
